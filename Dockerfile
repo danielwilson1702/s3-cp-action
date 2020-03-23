@@ -6,7 +6,7 @@ LABEL "com.github.actions.icon"="copy"
 LABEL "com.github.actions.color"="green"
 
 LABEL version="0.2.0"
-LABEL repository="https://github.com/tpaschalis/s3-cp-action"
+LABEL repository="https://github.com/danielwilson1702/s3-cp-action"
 LABEL homepage="https://tpaschalis.github.io"
 LABEL maintainer="Paschalis Tsilias <paschalist0@gmail.com>"
 
