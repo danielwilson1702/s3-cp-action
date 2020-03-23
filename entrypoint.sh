@@ -5,11 +5,13 @@ set -e
 mkdir -p ~/.aws
 touch ~/.aws/credentials
 
+echo "Bucket = ${AWS_S3_BUCKET}"
+echo "File = ${FILE}"
 echo "[default]
 aws_access_key_id = ${AWS_ACCESS_KEY_ID}
 aws_secret_access_key = ${AWS_SECRET_ACCESS_KEY}" > ~/.aws/credentials
 
 aws s3 cp ${FILE} s3://${AWS_S3_BUCKET} \
-            --region ${AWS_REGION} $*
+            --region ${AWS_REGION} $* --debug
 
 rm -rf ~/.aws
